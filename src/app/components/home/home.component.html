@@ -1,0 +1,11 @@
+<div class="p-8 mt-4">
+  <div class="flex mb-4 ">
+    <app-search (seacrh)="onSearch($event)"></app-search>
+  </div>
+  <div class="flex flex-wrap">
+    @for (item of filteredProducts; track $index) {
+    <div class="w-4/12 pr-2 mb-2"><app-product-card [product]="item" (viewProduct) ="onViewProduct($event)" ></app-product-card></div>
+    }
+  </div>
+</div>
+

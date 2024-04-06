@@ -1,0 +1,10 @@
+<div class="w-full flex items-center gap-4" style="width: 1200px;">
+  <mat-form-field class="!w-8/12" subscriptSizing="dynamic" appearance="outline" >
+    <input matInput placeholder="Search"
+    name="search"
+     [(ngModel)]="text"
+     >
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onSearch()">Search</button>
+  <button mat-raised-button color="accent" routerLink = "/add-product">Add Product</button>
+</div>
